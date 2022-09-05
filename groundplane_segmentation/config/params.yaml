@@ -1,0 +1,15 @@
+# params for removing ground plane
+MAX_HEIGHT: 0.007
+# in radians 
+FLOOR_MAX_ANGLE: 0
+
+# function flags / params
+bool_filter_ground: true
+
+bool_display_groundplane: true
+
+# params for ROS
+# LIDAR_TOPIC_SUBSCRIBE: "/robot1/camera/depth/color/points"
+LIDAR_TOPIC_SUBSCRIBE: "/camera/depth/color/points"
+
+SEG_PUB: "/ground_segmented"

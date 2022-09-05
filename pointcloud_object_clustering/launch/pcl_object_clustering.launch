@@ -1,0 +1,6 @@
+<!-- -->
+<launch>
+    <rosparam file="$(find pointcloud_clustering)/config/params.yaml"/>
+    <node pkg="pointcloud_clustering" type="pointcloud_clustering" name="pointcloud_clustering" output="screen">
+    </node>
+</launch>

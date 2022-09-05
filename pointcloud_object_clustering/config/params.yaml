@@ -1,0 +1,49 @@
+# params for removing ground plane
+MAX_HEIGHT: 0.007
+# in radians
+FLOOR_MAX_ANGLE: 0.0
+
+# params for downsampling
+LEAF_SIZE: 0.5
+
+# params for clustering
+MAX_CLUSTER_SIZE: 20000
+MIN_CLUSTER_SIZE: 1
+CLUSTER_TOLERANCE: 0.02
+
+# params for ROI filtering
+# set min and max to 0 for no filtering in a specific axis
+x_min: 0
+x_max: 0
+y_min: 0
+y_max: 0
+z_min: 0.03
+z_max: 0.4
+
+
+# params for DoN segmentation
+radius_small: 0.5
+radius_large: 2.0
+threshold: 1.0
+
+# function flags / params
+bool_filter_ground: true
+bool_display_groundplane: false
+bool_downsample: false
+bool_ROI_filtering: true
+bool_difference_normals_segmentation: false
+bool_find_centroids_and_vertices: true
+
+
+# params for ROS
+POINTCLOUD_SUB: "/camera/depth/color/points"
+FRAME_ID: "/base_link"
+
+CENTROIDS_PUB: "/centroids_vis"
+BOUNDING_BOX_PUB: "/bounding_boxes_vis"
+CENTROID_VERTICES_PUB: "/centroids_and_vertices"
+PROCESSED_POINTCLOUD_PUB: "/pointcloud_processed"
+
+bool_publish_bounding_box: true
+bool_publish_centroids: false
+bool_publish_centroids_and_vertices: true

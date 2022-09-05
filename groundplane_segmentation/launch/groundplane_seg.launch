@@ -1,0 +1,6 @@
+<!-- -->
+<launch>
+    <rosparam file="$(find groundplane_segmentation)/config/params.yaml"/>
+    <node pkg="groundplane_segmentation" type="groundplane_seg" name="groundplane_seg" output="screen">
+    </node>
+</launch>
