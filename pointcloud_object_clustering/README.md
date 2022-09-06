@@ -56,17 +56,13 @@ All of the below steps can be controlled by changing the parameters in `config/p
   
   In factory floors, the general FOV ranges from 3 to 40 cm, use ```z_min = 0.03``` , ```z_max = 0.4 ```
 
-- `radius_small` (0.5) for DoN segmentation
-- `radius_large` (2.0) for DoN segmentation
-- `threshold` (0.5) DoN L2 norm threshold value
-
 - `bool_filter_ground` (true) boolean value
 - `bool_downsample` (true) boolean value
 - `bool_ROI_filtering` (true) boolean value
 - `bool_difference_normals_segmentation` (false) boolean value
 - `bool_find_centroids_and_vertices` (true) Centroids and vertices of bounding boxes in the format:
-  
-[Centroid1X, Centroid1Y, Centroid1Z,
+ 
+```[Centroid1X, Centroid1Y, Centroid1Z,
 min_point1.x, min_point1.y, min_point1.z,
 max_point1.x, min_point1.y, min_point1.z,
 max_point1.x, min_point1.y, max_point1.z,
@@ -74,7 +70,7 @@ min_point1.x, min_point1.y, max_point1.z,
 min_point1.x, max_point1.y, max_point1.z,
 max_point1.x, max_point1.y, max_point1.z,
 max_point1.x, max_point1.y, min_point1.z,
-min_point1.x, max_point1.y, min_point1.z .... Centroid2X....]
+min_point1.x, max_point1.y, min_point1.z .... Centroid2X....]```
 
 
 
