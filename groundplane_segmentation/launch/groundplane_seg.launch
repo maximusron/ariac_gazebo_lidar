@@ -3,4 +3,6 @@
     <rosparam file="$(find groundplane_segmentation)/config/params.yaml"/>
     <node pkg="groundplane_segmentation" type="groundplane_seg" name="groundplane_seg" output="screen">
     </node>
+     <node type="rviz" name="rviz" pkg="rviz" args="-d $(find groundplane_segmentation)/rviz/ground_seg.rviz" />
 </launch>
+

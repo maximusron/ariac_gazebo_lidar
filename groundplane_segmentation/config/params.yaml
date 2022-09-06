@@ -6,7 +6,7 @@ FLOOR_MAX_ANGLE: 0
 # function flags / params
 bool_filter_ground: true
 
-bool_display_groundplane: true
+bool_display_groundplane: false
 
 # params for ROS
 # LIDAR_TOPIC_SUBSCRIBE: "/robot1/camera/depth/color/points"
